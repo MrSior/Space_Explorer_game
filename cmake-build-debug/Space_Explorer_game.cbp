@@ -82,6 +82,24 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameController.cpp">
+			<Option target="Space_Explorer_game"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameController.h">
+			<Option target="Space_Explorer_game"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameModel.cpp">
+			<Option target="Space_Explorer_game"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameModel.h">
+			<Option target="Space_Explorer_game"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameRender.cpp">
+			<Option target="Space_Explorer_game"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameRender.h">
+			<Option target="Space_Explorer_game"/>
+		</Unit>
 		<Unit filename="/Users/simonchubenko/Documents/C++/Space_Explorer_game/main.cpp">
 			<Option target="Space_Explorer_game"/>
 		</Unit>

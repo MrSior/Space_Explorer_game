@@ -142,6 +142,87 @@ Space_Explorer_game/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Space_Explorer_game.dir/build.make CMakeFiles/Space_Explorer_game.dir/build
 .PHONY : Space_Explorer_game/fast
 
+Game/GameController.o: Game/GameController.cpp.o
+
+.PHONY : Game/GameController.o
+
+# target to build an object file
+Game/GameController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Space_Explorer_game.dir/build.make CMakeFiles/Space_Explorer_game.dir/Game/GameController.cpp.o
+.PHONY : Game/GameController.cpp.o
+
+Game/GameController.i: Game/GameController.cpp.i
+
+.PHONY : Game/GameController.i
+
+# target to preprocess a source file
+Game/GameController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Space_Explorer_game.dir/build.make CMakeFiles/Space_Explorer_game.dir/Game/GameController.cpp.i
+.PHONY : Game/GameController.cpp.i
+
+Game/GameController.s: Game/GameController.cpp.s
+
+.PHONY : Game/GameController.s
+
+# target to generate assembly for a file
+Game/GameController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Space_Explorer_game.dir/build.make CMakeFiles/Space_Explorer_game.dir/Game/GameController.cpp.s
+.PHONY : Game/GameController.cpp.s
+
+Game/GameModel.o: Game/GameModel.cpp.o
+
+.PHONY : Game/GameModel.o
+
+# target to build an object file
+Game/GameModel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Space_Explorer_game.dir/build.make CMakeFiles/Space_Explorer_game.dir/Game/GameModel.cpp.o
+.PHONY : Game/GameModel.cpp.o
+
+Game/GameModel.i: Game/GameModel.cpp.i
+
+.PHONY : Game/GameModel.i
+
+# target to preprocess a source file
+Game/GameModel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Space_Explorer_game.dir/build.make CMakeFiles/Space_Explorer_game.dir/Game/GameModel.cpp.i
+.PHONY : Game/GameModel.cpp.i
+
+Game/GameModel.s: Game/GameModel.cpp.s
+
+.PHONY : Game/GameModel.s
+
+# target to generate assembly for a file
+Game/GameModel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Space_Explorer_game.dir/build.make CMakeFiles/Space_Explorer_game.dir/Game/GameModel.cpp.s
+.PHONY : Game/GameModel.cpp.s
+
+Game/GameRender.o: Game/GameRender.cpp.o
+
+.PHONY : Game/GameRender.o
+
+# target to build an object file
+Game/GameRender.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Space_Explorer_game.dir/build.make CMakeFiles/Space_Explorer_game.dir/Game/GameRender.cpp.o
+.PHONY : Game/GameRender.cpp.o
+
+Game/GameRender.i: Game/GameRender.cpp.i
+
+.PHONY : Game/GameRender.i
+
+# target to preprocess a source file
+Game/GameRender.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Space_Explorer_game.dir/build.make CMakeFiles/Space_Explorer_game.dir/Game/GameRender.cpp.i
+.PHONY : Game/GameRender.cpp.i
+
+Game/GameRender.s: Game/GameRender.cpp.s
+
+.PHONY : Game/GameRender.s
+
+# target to generate assembly for a file
+Game/GameRender.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Space_Explorer_game.dir/build.make CMakeFiles/Space_Explorer_game.dir/Game/GameRender.cpp.s
+.PHONY : Game/GameRender.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -178,6 +259,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Space_Explorer_game"
+	@echo "... Game/GameController.o"
+	@echo "... Game/GameController.i"
+	@echo "... Game/GameController.s"
+	@echo "... Game/GameModel.o"
+	@echo "... Game/GameModel.i"
+	@echo "... Game/GameModel.s"
+	@echo "... Game/GameRender.o"
+	@echo "... Game/GameRender.i"
+	@echo "... Game/GameRender.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
