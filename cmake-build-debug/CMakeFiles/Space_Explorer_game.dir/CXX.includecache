@@ -6,33 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameController.cpp
-GameController.h
-/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameController.h
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Player/Player.cpp
+Player.h
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Player/Player.h
 
-/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameController.h
-GameModel.h
-/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameModel.h
-GameRender.h
-/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameRender.h
-
-/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameModel.h
-
-/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameRender.cpp
-GameRender.h
-/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameRender.h
-
-/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameRender.h
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Player/Player.h
 SFML/Graphics.hpp
-/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/SFML/Graphics.hpp
-GameModel.h
-/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameModel.h
-
-/Users/simonchubenko/Documents/C++/Space_Explorer_game/main.cpp
-Game/GameController.h
-/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameController.h
-Game/GameRender.h
-/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameRender.h
-Game/GameModel.h
-/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameModel.h
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Player/SFML/Graphics.hpp
 

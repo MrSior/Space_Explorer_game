@@ -5,9 +5,14 @@
 #ifndef SPACE_EXPLORER_GAME_GAMEMODEL_H
 #define SPACE_EXPLORER_GAME_GAMEMODEL_H
 
+#include "Scene/Scene.h"
 
 class GameModel {
-
+public:
+    Scene scene;
+    GameModel();
+    void Move_Player(sf::Vector2<float> direction);
+    sf::Vector2<float> Get_player_position();
 };
 
 

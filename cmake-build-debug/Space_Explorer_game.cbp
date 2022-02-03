@@ -100,6 +100,18 @@
 		<Unit filename="/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameRender.h">
 			<Option target="Space_Explorer_game"/>
 		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Player/Player.cpp">
+			<Option target="Space_Explorer_game"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Player/Player.h">
+			<Option target="Space_Explorer_game"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Scene.cpp">
+			<Option target="Space_Explorer_game"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Scene.h">
+			<Option target="Space_Explorer_game"/>
+		</Unit>
 		<Unit filename="/Users/simonchubenko/Documents/C++/Space_Explorer_game/main.cpp">
 			<Option target="Space_Explorer_game"/>
 		</Unit>

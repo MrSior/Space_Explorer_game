@@ -16,7 +16,16 @@ void GameController::Run() {
             if (event.type == sf::Event::Closed) {
                 m_render->window().close();
             }
+//            if (event.type == sf::Event::KeyPressed){
+//                if (event.key.code == sf::Keyboard::W){
+//                    m_model->Move_Player(sf::Vector2<float> (0, -1));
+//                }
+//                if (event.key.code == sf::Keyboard::S){
+//                    m_model->Move_Player(sf::Vector2<float> (0, 1));
+//                }
+//            }
         }
+        m_model->scene.player.Update();
         m_render -> Render();
     }
 }

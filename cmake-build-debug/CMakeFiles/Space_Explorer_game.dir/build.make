@@ -128,12 +128,40 @@ CMakeFiles/Space_Explorer_game.dir/Game/GameController.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Explorer_game.dir/Game/GameController.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameController.cpp -o CMakeFiles/Space_Explorer_game.dir/Game/GameController.cpp.s
 
+CMakeFiles/Space_Explorer_game.dir/Game/Scene/Scene.cpp.o: CMakeFiles/Space_Explorer_game.dir/flags.make
+CMakeFiles/Space_Explorer_game.dir/Game/Scene/Scene.cpp.o: ../Game/Scene/Scene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/simonchubenko/Documents/C++/Space_Explorer_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Space_Explorer_game.dir/Game/Scene/Scene.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Explorer_game.dir/Game/Scene/Scene.cpp.o -c /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Scene.cpp
+
+CMakeFiles/Space_Explorer_game.dir/Game/Scene/Scene.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Explorer_game.dir/Game/Scene/Scene.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Scene.cpp > CMakeFiles/Space_Explorer_game.dir/Game/Scene/Scene.cpp.i
+
+CMakeFiles/Space_Explorer_game.dir/Game/Scene/Scene.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Explorer_game.dir/Game/Scene/Scene.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Scene.cpp -o CMakeFiles/Space_Explorer_game.dir/Game/Scene/Scene.cpp.s
+
+CMakeFiles/Space_Explorer_game.dir/Game/Scene/Player/Player.cpp.o: CMakeFiles/Space_Explorer_game.dir/flags.make
+CMakeFiles/Space_Explorer_game.dir/Game/Scene/Player/Player.cpp.o: ../Game/Scene/Player/Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/simonchubenko/Documents/C++/Space_Explorer_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Space_Explorer_game.dir/Game/Scene/Player/Player.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Explorer_game.dir/Game/Scene/Player/Player.cpp.o -c /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Player/Player.cpp
+
+CMakeFiles/Space_Explorer_game.dir/Game/Scene/Player/Player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Explorer_game.dir/Game/Scene/Player/Player.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Player/Player.cpp > CMakeFiles/Space_Explorer_game.dir/Game/Scene/Player/Player.cpp.i
+
+CMakeFiles/Space_Explorer_game.dir/Game/Scene/Player/Player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Explorer_game.dir/Game/Scene/Player/Player.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Player/Player.cpp -o CMakeFiles/Space_Explorer_game.dir/Game/Scene/Player/Player.cpp.s
+
 # Object files for target Space_Explorer_game
 Space_Explorer_game_OBJECTS = \
 "CMakeFiles/Space_Explorer_game.dir/main.cpp.o" \
 "CMakeFiles/Space_Explorer_game.dir/Game/GameModel.cpp.o" \
 "CMakeFiles/Space_Explorer_game.dir/Game/GameRender.cpp.o" \
-"CMakeFiles/Space_Explorer_game.dir/Game/GameController.cpp.o"
+"CMakeFiles/Space_Explorer_game.dir/Game/GameController.cpp.o" \
+"CMakeFiles/Space_Explorer_game.dir/Game/Scene/Scene.cpp.o" \
+"CMakeFiles/Space_Explorer_game.dir/Game/Scene/Player/Player.cpp.o"
 
 # External object files for target Space_Explorer_game
 Space_Explorer_game_EXTERNAL_OBJECTS =
@@ -142,13 +170,15 @@ Space_Explorer_game: CMakeFiles/Space_Explorer_game.dir/main.cpp.o
 Space_Explorer_game: CMakeFiles/Space_Explorer_game.dir/Game/GameModel.cpp.o
 Space_Explorer_game: CMakeFiles/Space_Explorer_game.dir/Game/GameRender.cpp.o
 Space_Explorer_game: CMakeFiles/Space_Explorer_game.dir/Game/GameController.cpp.o
+Space_Explorer_game: CMakeFiles/Space_Explorer_game.dir/Game/Scene/Scene.cpp.o
+Space_Explorer_game: CMakeFiles/Space_Explorer_game.dir/Game/Scene/Player/Player.cpp.o
 Space_Explorer_game: CMakeFiles/Space_Explorer_game.dir/build.make
 Space_Explorer_game: /Library/Frameworks/./sfml-graphics.framework/Versions/2.5.1/sfml-graphics
 Space_Explorer_game: /Library/Frameworks/./sfml-audio.framework/Versions/2.5.1/sfml-audio
 Space_Explorer_game: /Library/Frameworks/./sfml-window.framework/Versions/2.5.1/sfml-window
 Space_Explorer_game: /Library/Frameworks/./sfml-system.framework/Versions/2.5.1/sfml-system
 Space_Explorer_game: CMakeFiles/Space_Explorer_game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/simonchubenko/Documents/C++/Space_Explorer_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Space_Explorer_game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/simonchubenko/Documents/C++/Space_Explorer_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Space_Explorer_game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Space_Explorer_game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

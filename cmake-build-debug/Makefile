@@ -223,6 +223,60 @@ Game/GameRender.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Space_Explorer_game.dir/build.make CMakeFiles/Space_Explorer_game.dir/Game/GameRender.cpp.s
 .PHONY : Game/GameRender.cpp.s
 
+Game/Scene/Player/Player.o: Game/Scene/Player/Player.cpp.o
+
+.PHONY : Game/Scene/Player/Player.o
+
+# target to build an object file
+Game/Scene/Player/Player.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Space_Explorer_game.dir/build.make CMakeFiles/Space_Explorer_game.dir/Game/Scene/Player/Player.cpp.o
+.PHONY : Game/Scene/Player/Player.cpp.o
+
+Game/Scene/Player/Player.i: Game/Scene/Player/Player.cpp.i
+
+.PHONY : Game/Scene/Player/Player.i
+
+# target to preprocess a source file
+Game/Scene/Player/Player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Space_Explorer_game.dir/build.make CMakeFiles/Space_Explorer_game.dir/Game/Scene/Player/Player.cpp.i
+.PHONY : Game/Scene/Player/Player.cpp.i
+
+Game/Scene/Player/Player.s: Game/Scene/Player/Player.cpp.s
+
+.PHONY : Game/Scene/Player/Player.s
+
+# target to generate assembly for a file
+Game/Scene/Player/Player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Space_Explorer_game.dir/build.make CMakeFiles/Space_Explorer_game.dir/Game/Scene/Player/Player.cpp.s
+.PHONY : Game/Scene/Player/Player.cpp.s
+
+Game/Scene/Scene.o: Game/Scene/Scene.cpp.o
+
+.PHONY : Game/Scene/Scene.o
+
+# target to build an object file
+Game/Scene/Scene.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Space_Explorer_game.dir/build.make CMakeFiles/Space_Explorer_game.dir/Game/Scene/Scene.cpp.o
+.PHONY : Game/Scene/Scene.cpp.o
+
+Game/Scene/Scene.i: Game/Scene/Scene.cpp.i
+
+.PHONY : Game/Scene/Scene.i
+
+# target to preprocess a source file
+Game/Scene/Scene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Space_Explorer_game.dir/build.make CMakeFiles/Space_Explorer_game.dir/Game/Scene/Scene.cpp.i
+.PHONY : Game/Scene/Scene.cpp.i
+
+Game/Scene/Scene.s: Game/Scene/Scene.cpp.s
+
+.PHONY : Game/Scene/Scene.s
+
+# target to generate assembly for a file
+Game/Scene/Scene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Space_Explorer_game.dir/build.make CMakeFiles/Space_Explorer_game.dir/Game/Scene/Scene.cpp.s
+.PHONY : Game/Scene/Scene.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -268,6 +322,12 @@ help:
 	@echo "... Game/GameRender.o"
 	@echo "... Game/GameRender.i"
 	@echo "... Game/GameRender.s"
+	@echo "... Game/Scene/Player/Player.o"
+	@echo "... Game/Scene/Player/Player.i"
+	@echo "... Game/Scene/Player/Player.s"
+	@echo "... Game/Scene/Scene.o"
+	@echo "... Game/Scene/Scene.i"
+	@echo "... Game/Scene/Scene.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
