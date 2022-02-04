@@ -6,11 +6,33 @@
 
 #IncludeRegexTransform: 
 
-/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Player/Player.cpp
-Player.h
-/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Player/Player.h
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Bullet/Bullet.cpp
+Bullet.h
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Bullet/Bullet.h
+iostream
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Bullet/iostream
+cmath
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Bullet/cmath
+
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Bullet/Bullet.h
+SFML/Graphics.hpp
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Bullet/SFML/Graphics.hpp
 
 /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Player/Player.h
 SFML/Graphics.hpp
 /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Player/SFML/Graphics.hpp
+
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Scene.cpp
+Scene.h
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Scene.h
+iostream
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/iostream
+
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Scene.h
+Player/Player.h
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Player/Player.h
+Bullet/Bullet.h
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Bullet/Bullet.h
+vector
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/vector
 

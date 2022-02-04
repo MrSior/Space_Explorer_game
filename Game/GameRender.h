@@ -19,6 +19,7 @@ public:
 
     void Init();
     void Render();
+    sf::Vector2i Get_mouse_position();
     void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 };
 

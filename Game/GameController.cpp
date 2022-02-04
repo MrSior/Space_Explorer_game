@@ -16,16 +16,14 @@ void GameController::Run() {
             if (event.type == sf::Event::Closed) {
                 m_render->window().close();
             }
-//            if (event.type == sf::Event::KeyPressed){
-//                if (event.key.code == sf::Keyboard::W){
-//                    m_model->Move_Player(sf::Vector2<float> (0, -1));
-//                }
-//                if (event.key.code == sf::Keyboard::S){
-//                    m_model->Move_Player(sf::Vector2<float> (0, 1));
-//                }
-//            }
+            if (event.type == sf::Event::MouseButtonPressed){
+                if (event.key.code == sf::Mouse::Button::Left){
+                    m_model->scene.Create_bullet();
+                }
+            }
         }
-        m_model->scene.player.Update();
+        m_model->scene.Update();
+        m_model->scene.player.Look_at(m_render->Get_mouse_position());
         m_render -> Render();
     }
 }

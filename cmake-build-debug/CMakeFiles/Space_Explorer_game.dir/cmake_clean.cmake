@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Space_Explorer_game.dir/Game/GameController.cpp.o"
   "CMakeFiles/Space_Explorer_game.dir/Game/GameModel.cpp.o"
   "CMakeFiles/Space_Explorer_game.dir/Game/GameRender.cpp.o"
+  "CMakeFiles/Space_Explorer_game.dir/Game/Scene/Bullet/Bullet.cpp.o"
   "CMakeFiles/Space_Explorer_game.dir/Game/Scene/Player/Player.cpp.o"
   "CMakeFiles/Space_Explorer_game.dir/Game/Scene/Scene.cpp.o"
   "CMakeFiles/Space_Explorer_game.dir/main.cpp.o"

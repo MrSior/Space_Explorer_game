@@ -3,6 +3,7 @@
 //
 
 #include "GameRender.h"
+#include "iostream"
 
 GameRender::GameRender(GameModel *model) {
     m_model = model;
@@ -27,4 +28,12 @@ void GameRender::draw(sf::RenderTarget &target, sf::RenderStates states) const {
     states.transform *= getTransform();
 
     target.draw(m_model->scene.player.Get_sprite());
+    for (auto i : m_model->scene.bullets) {
+        target.draw(i->Get_sprite());
+    }
 }
+
+sf::Vector2i GameRender::Get_mouse_position() {
+    return sf::Mouse::getPosition(m_window);
+}
+
