@@ -31,16 +31,16 @@ void GameRender::draw(sf::RenderTarget &target, sf::RenderStates states) const {
     states.transform *= getTransform();
     target.draw(background);
 
-    target.draw(m_model->scene.player.Get_sprite());
-    for (auto i : m_model->scene.bullets) {
+    target.draw(m_model->scene->player.Get_sprite());
+    for (auto i : m_model->scene->bullets) {
         target.draw(i->Get_sprite());
     }
 
-    for (auto i : m_model->scene.enemy_bullets) {
+    for (auto i : m_model->scene->enemy_bullets) {
         target.draw(i->Get_sprite());
     }
 
-    for (auto i : m_model->scene.enemies) {
+    for (auto i : m_model->scene->enemies) {
         target.draw(i->Get_sprite());
     }
 }

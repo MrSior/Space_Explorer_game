@@ -6,25 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameController.cpp
-GameController.h
-/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameController.h
-
-/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameController.h
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameModel.cpp
 GameModel.h
 /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameModel.h
-GameRender.h
-/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameRender.h
 
 /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameModel.h
 Scene/Scene.h
 /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Scene.h
-
-/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameRender.h
-SFML/Graphics.hpp
-/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/SFML/Graphics.hpp
-GameModel.h
-/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameModel.h
 
 /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Bullet/Bullet.h
 SFML/Graphics.hpp

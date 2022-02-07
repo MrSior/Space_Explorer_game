@@ -18,13 +18,20 @@ void GameController::Run() {
             }
             if (event.type == sf::Event::MouseButtonPressed){
                 if (event.key.code == sf::Mouse::Button::Left){
-                    m_model->scene.Create_bullet();
+                    if (!m_model->scene->is_player_dead) {
+                        m_model->scene->Create_bullet();
+                    }
+                }
+            }
+            if (event.type == sf::Event::KeyPressed){
+                if (event.key.code == sf::Keyboard::R) {
+                    m_model->scene = new Scene();
                 }
             }
         }
-        if (!m_model->scene.is_player_dead){
-            m_model->scene.Update();
-            m_model->scene.player.Look_at(m_render->Get_mouse_position());
+        if (!m_model->scene->is_player_dead){
+            m_model->scene->Update();
+            m_model->scene->player.Look_at(m_render->Get_mouse_position());
         }
         m_render -> Render();
     }

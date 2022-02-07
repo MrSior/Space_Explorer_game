@@ -9,7 +9,7 @@
 
 class GameModel {
 public:
-    Scene scene;
+    Scene* scene;
     GameModel();
     void Move_Player(sf::Vector2<float> direction);
     sf::Vector2<float> Get_player_position();
