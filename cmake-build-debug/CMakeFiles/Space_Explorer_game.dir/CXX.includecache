@@ -6,9 +6,51 @@
 
 #IncludeRegexTransform: 
 
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameController.cpp
+GameController.h
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameController.h
+
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameController.h
+GameModel.h
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameModel.h
+GameRender.h
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameRender.h
+
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameModel.cpp
+GameModel.h
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameModel.h
+
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameModel.h
+Scene/Scene.h
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Scene.h
+
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameRender.cpp
+GameRender.h
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameRender.h
+iostream
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/iostream
+
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameRender.h
+SFML/Graphics.hpp
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/SFML/Graphics.hpp
+GameModel.h
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameModel.h
+
 /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Bullet/Bullet.h
 SFML/Graphics.hpp
 /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Bullet/SFML/Graphics.hpp
+
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Enemy/Enemy.cpp
+Enemy.h
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Enemy/Enemy.h
+cmath
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Enemy/cmath
+random
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Enemy/random
+ctime
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Enemy/ctime
+iostream
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Enemy/iostream
 
 /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Enemy/Enemy.h
 SFML/Graphics.hpp
@@ -37,4 +79,12 @@ Enemy/Enemy.h
 /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Enemy/Enemy.h
 vector
 /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/vector
+
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/main.cpp
+Game/GameController.h
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameController.h
+Game/GameRender.h
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameRender.h
+Game/GameModel.h
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameModel.h
 

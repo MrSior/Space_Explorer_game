@@ -103,7 +103,10 @@ void Scene::Create_bullet() {
 
 void Scene::Create_Enemy(sf::Vector2f spawn_position) {
     std::uniform_int_distribution<> dis(4, 8);
-    Enemy* enemy = new Enemy(spawn_position, 100 * dis(gen));
+    std::uniform_int_distribution<> dis1(-1, 1);
+    std::uniform_real_distribution<> dis2(1, 2);
+    Enemy* enemy = new Enemy(spawn_position, 100 * dis(gen),
+                             dis1(gen), dis2(gen));
     enemies.push_back(enemy);
 }
 

@@ -20,8 +20,10 @@ private:
     sf::Vector2f looking_direction;
     sf::Clock last_shoot;
     float shoot_time;
+    int circle_move_direction;
+    float circle_move_speed;
 public:
-    Enemy(sf::Vector2f spawn_position, int _attack_distance);
+    Enemy(sf::Vector2f spawn_position, int _attack_distance, int _circle_move_direction, float _circle_move_speed);
     void Init();
     void Move(sf::Vector2<float> movement);
     sf::Vector2<float> Get_position();

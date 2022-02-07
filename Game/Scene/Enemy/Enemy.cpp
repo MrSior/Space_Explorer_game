@@ -8,10 +8,12 @@
 #include "ctime"
 #include "iostream"
 
-Enemy::Enemy(sf::Vector2f spawn_position, int _attack_distance) {
+Enemy::Enemy(sf::Vector2f spawn_position, int _attack_distance, int _circle_move_direction, float _circle_move_speed) {
     position = spawn_position;
     sprite.setPosition(spawn_position);
     attack_distance = _attack_distance;
+    circle_move_speed = _circle_move_speed;
+    circle_move_direction = _circle_move_direction;
     Init();
 }
 
@@ -72,7 +74,7 @@ void Enemy::Update(sf::Vector2f player_pos) {
     } else {
         direction.x = direction.x / length;
         direction.y = direction.y / length;
-        _angle += 0.1;
+        _angle += 0.1 * circle_move_speed;
         double angle = _angle - 180;
         if (angle < 0){
             angle = std::abs(angle);
@@ -85,7 +87,9 @@ void Enemy::Update(sf::Vector2f player_pos) {
         double new_y = -player_pos.y + sin(angle) * (dote.x - player_pos.x) + cos(angle) * (-dote.y + player_pos.y);
         sf::Vector2f new_pos(new_x, -new_y);
         sf::Vector2f move (new_pos.x - position.x, new_pos.y - position.y);
-        Move(-move);
+        move.x = move.x * circle_move_direction;
+        move.y = move.y * circle_move_direction;
+        Move(move);
         Move(-direction);
     }
     Look_at(player_pos);
