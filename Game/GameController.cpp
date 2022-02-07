@@ -22,8 +22,10 @@ void GameController::Run() {
                 }
             }
         }
-        m_model->scene.Update();
-        m_model->scene.player.Look_at(m_render->Get_mouse_position());
+        if (!m_model->scene.is_player_dead){
+            m_model->scene.Update();
+            m_model->scene.player.Look_at(m_render->Get_mouse_position());
+        }
         m_render -> Render();
     }
 }

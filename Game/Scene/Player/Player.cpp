@@ -30,13 +30,14 @@ void Player::Move(sf::Vector2<float> movement) {
 }
 
 Player::Player() {
-    position = sf::Vector2<float> (0, 0);
-    shape.setPosition(0, 0);
+    position = sf::Vector2<float> (sf::VideoMode::getDesktopMode().width / 3, sf::VideoMode::getDesktopMode().width / 3);
+    sprite.setPosition(position);
     Init();
 }
 
 void Player::Init() {
     move_speed = 1.f;
+    hp = 10;
     looking_direction = sf::Vector2f (0, -1);
     texture.loadFromFile("./Images/SpaceShip_Player.png");
     sprite.setTexture(texture);
@@ -91,4 +92,12 @@ sf::Vector2f Player::Get_looking_direction() {
 
 float Player::Get_angle() {
     return _angle;
+}
+
+void Player::Get_damage(int damage) {
+    hp -= damage;
+}
+
+int Player::Get_hp() {
+    return hp;
 }

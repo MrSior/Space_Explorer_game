@@ -16,6 +16,7 @@ private:
     float move_speed;
     float _angle;
     sf::Vector2f looking_direction;
+    int hp;
 public:
     Player();
     Player(sf::Vector2<float> start_pos);
@@ -25,6 +26,8 @@ public:
     sf::Sprite Get_sprite();
     sf::Vector2f Get_looking_direction();
     void Look_at(sf::Vector2i target);
+    void Get_damage(int damage);
+    int Get_hp();
     float Get_angle();
 
     void Update();

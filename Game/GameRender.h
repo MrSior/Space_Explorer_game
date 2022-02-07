@@ -12,6 +12,8 @@ class GameRender : public sf::Drawable, public sf::Transformable{
 private:
     GameModel* m_model;
     sf::RenderWindow m_window;
+    sf::Texture background_texture;
+    sf::Sprite background;
     float window_x, window_y;
 public:
     GameRender(GameModel* model);

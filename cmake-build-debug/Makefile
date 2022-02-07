@@ -250,6 +250,33 @@ Game/Scene/Bullet/Bullet.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Space_Explorer_game.dir/build.make CMakeFiles/Space_Explorer_game.dir/Game/Scene/Bullet/Bullet.cpp.s
 .PHONY : Game/Scene/Bullet/Bullet.cpp.s
 
+Game/Scene/Enemy/Enemy.o: Game/Scene/Enemy/Enemy.cpp.o
+
+.PHONY : Game/Scene/Enemy/Enemy.o
+
+# target to build an object file
+Game/Scene/Enemy/Enemy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Space_Explorer_game.dir/build.make CMakeFiles/Space_Explorer_game.dir/Game/Scene/Enemy/Enemy.cpp.o
+.PHONY : Game/Scene/Enemy/Enemy.cpp.o
+
+Game/Scene/Enemy/Enemy.i: Game/Scene/Enemy/Enemy.cpp.i
+
+.PHONY : Game/Scene/Enemy/Enemy.i
+
+# target to preprocess a source file
+Game/Scene/Enemy/Enemy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Space_Explorer_game.dir/build.make CMakeFiles/Space_Explorer_game.dir/Game/Scene/Enemy/Enemy.cpp.i
+.PHONY : Game/Scene/Enemy/Enemy.cpp.i
+
+Game/Scene/Enemy/Enemy.s: Game/Scene/Enemy/Enemy.cpp.s
+
+.PHONY : Game/Scene/Enemy/Enemy.s
+
+# target to generate assembly for a file
+Game/Scene/Enemy/Enemy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Space_Explorer_game.dir/build.make CMakeFiles/Space_Explorer_game.dir/Game/Scene/Enemy/Enemy.cpp.s
+.PHONY : Game/Scene/Enemy/Enemy.cpp.s
+
 Game/Scene/Player/Player.o: Game/Scene/Player/Player.cpp.o
 
 .PHONY : Game/Scene/Player/Player.o
@@ -352,6 +379,9 @@ help:
 	@echo "... Game/Scene/Bullet/Bullet.o"
 	@echo "... Game/Scene/Bullet/Bullet.i"
 	@echo "... Game/Scene/Bullet/Bullet.s"
+	@echo "... Game/Scene/Enemy/Enemy.o"
+	@echo "... Game/Scene/Enemy/Enemy.i"
+	@echo "... Game/Scene/Enemy/Enemy.s"
 	@echo "... Game/Scene/Player/Player.o"
 	@echo "... Game/Scene/Player/Player.i"
 	@echo "... Game/Scene/Player/Player.s"
