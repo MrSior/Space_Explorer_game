@@ -70,7 +70,7 @@ void Scene::Update() {
             auto enemy_pos = enemies[j]->Get_position();
             auto between = bullet_pos - enemy_pos;
             float length = std::sqrt(between.x * between.x + between.y * between.y);
-            if (length < 25){
+            if (length < 35){
                 delete enemies[j];
                 delete bullets[i];
                 bullets.erase(bullets.begin() + i);
@@ -84,7 +84,7 @@ void Scene::Update() {
         auto between = bullet_pos - player.Get_position();
         float length = std::sqrt(between.x * between.x + between.y * between.y);
         if (length < 25){
-            player.Get_damage(1);
+//            player.Get_damage(1);
             delete enemy_bullets[i];
             enemy_bullets.erase(enemy_bullets.begin() + i);
         }

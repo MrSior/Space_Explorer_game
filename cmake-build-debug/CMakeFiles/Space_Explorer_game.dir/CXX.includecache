@@ -6,14 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameModel.cpp
-GameModel.h
-/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameModel.h
-
-/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameModel.h
-Scene/Scene.h
-/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Scene.h
-
 /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Bullet/Bullet.h
 SFML/Graphics.hpp
 /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Bullet/SFML/Graphics.hpp
@@ -27,6 +19,14 @@ random
 /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Player/Player.h
 SFML/Graphics.hpp
 /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Player/SFML/Graphics.hpp
+
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Scene.cpp
+Scene.h
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Scene.h
+iostream
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/iostream
+cmath
+/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/cmath
 
 /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Scene.h
 Player/Player.h

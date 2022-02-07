@@ -72,16 +72,20 @@ void Enemy::Update(sf::Vector2f player_pos) {
     } else {
         direction.x = direction.x / length;
         direction.y = direction.y / length;
-//        sf::Vector2f circle_move;
-//        float ang = _angle;
-//        if (ang < 0) {
-//            ang = std::abs(ang);
-//        } else {
-//            ang += 180;
-//        }
-//        circle_move.x = cos(ang * 3.1415926 / 180);
-//        circle_move.y = cos(ang * 3.1415926 / 180);
-//        _angle++;
+        _angle += 0.1;
+        double angle = _angle - 180;
+        if (angle < 0){
+            angle = std::abs(angle);
+        } else {
+            angle = 180 + (180 - angle);
+        }
+        angle = angle * 3.1415926 / 180;
+        sf::Vector2f dote(player_pos.x, player_pos.y - length);
+        double new_x = player_pos.x + cos(angle) * (dote.x - player_pos.x) - sin(angle) * (-dote.y + player_pos.y);
+        double new_y = -player_pos.y + sin(angle) * (dote.x - player_pos.x) + cos(angle) * (-dote.y + player_pos.y);
+        sf::Vector2f new_pos(new_x, -new_y);
+        sf::Vector2f move (new_pos.x - position.x, new_pos.y - position.y);
+        Move(-move);
         Move(-direction);
     }
     Look_at(player_pos);

@@ -25,6 +25,7 @@ void GameController::Run() {
             }
             if (event.type == sf::Event::KeyPressed){
                 if (event.key.code == sf::Keyboard::R) {
+                    delete m_model->scene;
                     m_model->scene = new Scene();
                 }
             }
