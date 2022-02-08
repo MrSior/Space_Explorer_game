@@ -7,6 +7,7 @@
 
 GameModel::GameModel() {
     scene = new Scene();
+    is_menu_open = true;
 }
 
 void GameModel::Move_Player(sf::Vector2<float> direction) {

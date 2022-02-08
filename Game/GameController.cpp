@@ -29,10 +29,19 @@ void GameController::Run() {
                     m_model->scene = new Scene();
                 }
             }
+            if (event.type == sf::Event::KeyPressed){
+                if (event.key.code == sf::Keyboard::Escape) {
+                    m_model->is_menu_open = !m_model->is_menu_open;
+                }
+            }
         }
-        if (!m_model->scene->is_player_dead){
+        if (!m_model->scene->is_player_dead && !m_model->is_menu_open){
             m_model->scene->Update();
             m_model->scene->player.Look_at(m_render->Get_mouse_position());
+        }
+
+        if (m_model->scene->is_player_dead && m_model->scene->explosion_animations.empty()) {
+            m_model->is_menu_open = true;
         }
         m_render -> Render();
     }

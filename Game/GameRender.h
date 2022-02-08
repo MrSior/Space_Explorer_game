@@ -14,6 +14,7 @@ private:
     sf::RenderWindow m_window;
     sf::Texture background_texture;
     sf::Sprite background;
+    sf::Font font;
     float window_x, window_y;
 public:
     GameRender(GameModel* model);

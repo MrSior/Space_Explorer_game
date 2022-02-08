@@ -13,6 +13,7 @@ private:
     sf::RectangleShape shape;
     sf::Sprite sprite;
     sf::Texture texture;
+    sf::Texture destroyed_texture;
     float move_speed;
     float _angle;
     sf::Vector2f looking_direction;

@@ -10,6 +10,8 @@
 class GameModel {
 public:
     Scene* scene;
+    bool is_menu_open;
+
     GameModel();
     void Move_Player(sf::Vector2<float> direction);
     sf::Vector2<float> Get_player_position();

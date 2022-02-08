@@ -112,6 +112,12 @@
 		<Unit filename="/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Enemy/Enemy.h">
 			<Option target="Space_Explorer_game"/>
 		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/ExplosionAnimation/ExplosionAnimation.cpp">
+			<Option target="Space_Explorer_game"/>
+		</Unit>
+		<Unit filename="/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/ExplosionAnimation/ExplosionAnimation.h">
+			<Option target="Space_Explorer_game"/>
+		</Unit>
 		<Unit filename="/Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Player/Player.cpp">
 			<Option target="Space_Explorer_game"/>
 		</Unit>

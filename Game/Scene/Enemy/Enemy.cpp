@@ -26,7 +26,7 @@ void Enemy::Init() {
     sprite.setOrigin(sprite.getTexture()->getSize().x / 2,
                      sprite.getTexture()->getSize().y / 2);
     last_shoot.restart();
-    shoot_time = 2;
+    shoot_time = 0.7;
 }
 
 void Enemy::Move(sf::Vector2f movement) {

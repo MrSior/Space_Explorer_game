@@ -13,6 +13,9 @@ Scene::Scene() {
 void Scene::Init() {
     gen.seed(time(0));
     is_player_dead = false;
+    score = 0;
+    spawn_time = 15;
+    spawn_timer.restart();
 }
 
 void Scene::Move_Player(sf::Vector2<float> direction) {
@@ -25,7 +28,8 @@ sf::Vector2<float> Scene::Get_player_position() {
 
 void Scene::Update() {
     player.Update();
-    if (enemies.size() == 0){
+    if (enemies.size() == 0 || spawn_timer.getElapsedTime().asSeconds() > spawn_time){
+        spawn_timer.restart();
         sf::Vector2f spawn_position;
         spawn_position = sf::Vector2f(-10, -10);
         Create_Enemy(spawn_position);
@@ -71,10 +75,12 @@ void Scene::Update() {
             auto between = bullet_pos - enemy_pos;
             float length = std::sqrt(between.x * between.x + between.y * between.y);
             if (length < 35){
+                Create_explosion_animation(enemies[j]->Get_position());
                 delete enemies[j];
                 delete bullets[i];
                 bullets.erase(bullets.begin() + i);
                 enemies.erase(enemies.begin() + j);
+                score++;
             }
         }
     }
@@ -84,13 +90,14 @@ void Scene::Update() {
         auto between = bullet_pos - player.Get_position();
         float length = std::sqrt(between.x * between.x + between.y * between.y);
         if (length < 25){
-//            player.Get_damage(1);
+            player.Get_damage(1);
             delete enemy_bullets[i];
             enemy_bullets.erase(enemy_bullets.begin() + i);
         }
     }
     if (player.Get_hp() < 0){
         is_player_dead = true;
+        Create_explosion_animation(player.Get_position());
     }
 }
 
@@ -113,4 +120,9 @@ void Scene::Create_Enemy(sf::Vector2f spawn_position) {
 void Scene::Create_enemy_bullet(Enemy *enemy) {
     Bullet* bullet = new Bullet(enemy->Get_position(), enemy->Get_looking_direction(), enemy->Get_angle(), true);
     enemy_bullets.push_back(bullet);
+}
+
+void Scene::Create_explosion_animation(sf::Vector2f position) {
+    ExplosionAnimation* explosionAnimation = new ExplosionAnimation(position);
+    explosion_animations.push_back(explosionAnimation);
 }

@@ -30,7 +30,7 @@ void Player::Move(sf::Vector2<float> movement) {
 }
 
 Player::Player() {
-    position = sf::Vector2<float> (sf::VideoMode::getDesktopMode().width / 3, sf::VideoMode::getDesktopMode().width / 3);
+    position = sf::Vector2<float> (1420, 940);
     sprite.setPosition(position);
     Init();
 }
@@ -40,6 +40,7 @@ void Player::Init() {
     hp = 10;
     looking_direction = sf::Vector2f (0, -1);
     texture.loadFromFile("./Images/SpaceShip_Player.png");
+    destroyed_texture.loadFromFile("./Images/SpaceShip_Player_destroyed.png");
     sprite.setTexture(texture);
     sprite.scale(5, 5);
     sprite.setOrigin(sprite.getTexture()->getSize().x / 2,
@@ -96,6 +97,11 @@ float Player::Get_angle() {
 
 void Player::Get_damage(int damage) {
     hp -= damage;
+    if (hp == 0){
+        sprite.setTexture(destroyed_texture);
+        sprite.setOrigin(sprite.getTexture()->getSize().x / 2,
+                         sprite.getTexture()->getSize().y / 2);
+    }
 }
 
 int Player::Get_hp() {

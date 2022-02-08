@@ -277,6 +277,33 @@ Game/Scene/Enemy/Enemy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Space_Explorer_game.dir/build.make CMakeFiles/Space_Explorer_game.dir/Game/Scene/Enemy/Enemy.cpp.s
 .PHONY : Game/Scene/Enemy/Enemy.cpp.s
 
+Game/Scene/ExplosionAnimation/ExplosionAnimation.o: Game/Scene/ExplosionAnimation/ExplosionAnimation.cpp.o
+
+.PHONY : Game/Scene/ExplosionAnimation/ExplosionAnimation.o
+
+# target to build an object file
+Game/Scene/ExplosionAnimation/ExplosionAnimation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Space_Explorer_game.dir/build.make CMakeFiles/Space_Explorer_game.dir/Game/Scene/ExplosionAnimation/ExplosionAnimation.cpp.o
+.PHONY : Game/Scene/ExplosionAnimation/ExplosionAnimation.cpp.o
+
+Game/Scene/ExplosionAnimation/ExplosionAnimation.i: Game/Scene/ExplosionAnimation/ExplosionAnimation.cpp.i
+
+.PHONY : Game/Scene/ExplosionAnimation/ExplosionAnimation.i
+
+# target to preprocess a source file
+Game/Scene/ExplosionAnimation/ExplosionAnimation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Space_Explorer_game.dir/build.make CMakeFiles/Space_Explorer_game.dir/Game/Scene/ExplosionAnimation/ExplosionAnimation.cpp.i
+.PHONY : Game/Scene/ExplosionAnimation/ExplosionAnimation.cpp.i
+
+Game/Scene/ExplosionAnimation/ExplosionAnimation.s: Game/Scene/ExplosionAnimation/ExplosionAnimation.cpp.s
+
+.PHONY : Game/Scene/ExplosionAnimation/ExplosionAnimation.s
+
+# target to generate assembly for a file
+Game/Scene/ExplosionAnimation/ExplosionAnimation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Space_Explorer_game.dir/build.make CMakeFiles/Space_Explorer_game.dir/Game/Scene/ExplosionAnimation/ExplosionAnimation.cpp.s
+.PHONY : Game/Scene/ExplosionAnimation/ExplosionAnimation.cpp.s
+
 Game/Scene/Player/Player.o: Game/Scene/Player/Player.cpp.o
 
 .PHONY : Game/Scene/Player/Player.o
@@ -382,6 +409,9 @@ help:
 	@echo "... Game/Scene/Enemy/Enemy.o"
 	@echo "... Game/Scene/Enemy/Enemy.i"
 	@echo "... Game/Scene/Enemy/Enemy.s"
+	@echo "... Game/Scene/ExplosionAnimation/ExplosionAnimation.o"
+	@echo "... Game/Scene/ExplosionAnimation/ExplosionAnimation.i"
+	@echo "... Game/Scene/ExplosionAnimation/ExplosionAnimation.s"
 	@echo "... Game/Scene/Player/Player.o"
 	@echo "... Game/Scene/Player/Player.i"
 	@echo "... Game/Scene/Player/Player.s"

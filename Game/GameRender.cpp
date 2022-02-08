@@ -19,6 +19,7 @@ void GameRender::Init() {
     background.setTexture(background_texture);
     background.setScale(1.5, 5.f / 3.f);
     m_window.create(sf::VideoMode(window_x, window_y), "Text Editor", sf::Style::Fullscreen);
+    font.loadFromFile("./font/ARCADECLASSIC.TTF");
 }
 
 void GameRender::Render() {
@@ -31,7 +32,10 @@ void GameRender::draw(sf::RenderTarget &target, sf::RenderStates states) const {
     states.transform *= getTransform();
     target.draw(background);
 
-    target.draw(m_model->scene->player.Get_sprite());
+    sf::RectangleShape menu_background(sf::Vector2f (float (sf::VideoMode::getDesktopMode().width),
+                                                          float (sf::VideoMode::getDesktopMode().height)));
+    menu_background.setFillColor(sf::Color(150, 150, 150, 150));
+
     for (auto i : m_model->scene->bullets) {
         target.draw(i->Get_sprite());
     }
@@ -42,6 +46,30 @@ void GameRender::draw(sf::RenderTarget &target, sf::RenderStates states) const {
 
     for (auto i : m_model->scene->enemies) {
         target.draw(i->Get_sprite());
+    }
+
+    target.draw(m_model->scene->player.Get_sprite());
+
+    sf::Text score_text;
+    score_text.setFont(font);
+    score_text.setString("Score " + std::to_string(m_model->scene->score));
+    score_text.setCharacterSize(80);
+    score_text.setFillColor(sf::Color::Yellow);
+    score_text.setPosition(30, 30);
+    target.draw(score_text);
+
+    for (int i = 0; i < m_model->scene->explosion_animations.size(); ++i) {
+        m_model->scene->explosion_animations[i]->Update();
+        if (m_model->scene->explosion_animations[i]->Get_is_finished()){
+            delete m_model->scene->explosion_animations[i];
+            m_model->scene->explosion_animations.erase(m_model->scene->explosion_animations.begin() + i);
+        } else {
+            target.draw(m_model->scene->explosion_animations[i]->Get_sprite());
+        }
+    }
+
+    if (m_model->is_menu_open){
+        target.draw(menu_background);
     }
 }
 
