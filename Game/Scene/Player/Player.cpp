@@ -30,7 +30,7 @@ void Player::Move(sf::Vector2<float> movement) {
 }
 
 Player::Player() {
-    position = sf::Vector2<float> (1420, 940);
+    position = sf::Vector2<float> (1440, 900);
     sprite.setPosition(position);
     Init();
 }

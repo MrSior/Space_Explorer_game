@@ -2,20 +2,20 @@
 // Created by Семён Чубенко on 08.02.2022.
 //
 
-#include "ExplosionAnimation.h"
+#include "Animation.h"
 
-ExplosionAnimation::ExplosionAnimation(sf::Vector2f position) {
+Animation::Animation(sf::Vector2f position) {
     this->position = position;
     Init();
 }
 
-void ExplosionAnimation::Init() {
+void Animation::Init() {
     frame_change_time = 0.1;
-    sf::Texture texture;
-    for (int i = 0; i < 12; ++i) {
-        texture.loadFromFile("./Images/Explosion/" + std::to_string(i + 1) + ".png");
-        frames.push_back(texture);
-    }
+//    sf::Texture texture;
+//    for (int i = 0; i < 12; ++i) {
+//        texture.loadFromFile("./Images/Explosion/" + std::to_string(i + 1) + ".png");
+//        frames.push_back(texture);
+//    }
     is_finished = false;
     clock.restart();
     current_frame = 0;
@@ -23,13 +23,17 @@ void ExplosionAnimation::Init() {
     frame.setPosition(position);
 }
 
-void ExplosionAnimation::Update() {
+void Animation::Update() {
     if (clock.getElapsedTime().asSeconds() > frame_change_time) {
         current_frame++;
         clock.restart();
     }
     if (current_frame >= frames.size()){
-        is_finished = true;
+        if (!is_looped) {
+            is_finished = true;
+        } else {
+            current_frame = 0;
+        }
     } else {
         frame.setTexture(frames[current_frame]);
         frame.setOrigin(frame.getTexture()->getSize().x / 2,
@@ -38,10 +42,17 @@ void ExplosionAnimation::Update() {
     }
 }
 
-sf::Sprite ExplosionAnimation::Get_sprite() {
+sf::Sprite Animation::Get_sprite() {
     return frame;
 }
 
-bool ExplosionAnimation::Get_is_finished() {
+bool Animation::Get_is_finished() {
     return is_finished;
+}
+
+Animation::Animation(sf::Vector2f position, std::vector<sf::Texture> frames, bool is_looped) {
+    this->position = position;
+    this->frames = frames;
+    this->is_looped = is_looped;
+    Init();
 }

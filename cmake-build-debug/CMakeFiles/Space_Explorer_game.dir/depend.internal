@@ -8,7 +8,7 @@ CMakeFiles/Space_Explorer_game.dir/Game/GameController.cpp.o
  /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameRender.h
  /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Bullet/Bullet.h
  /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Enemy/Enemy.h
- /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/ExplosionAnimation/ExplosionAnimation.h
+ /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/ExplosionAnimation/Animation.h
  /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Player/Player.h
  /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Scene.h
 CMakeFiles/Space_Explorer_game.dir/Game/GameModel.cpp.o
@@ -16,7 +16,7 @@ CMakeFiles/Space_Explorer_game.dir/Game/GameModel.cpp.o
  /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameModel.h
  /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Bullet/Bullet.h
  /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Enemy/Enemy.h
- /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/ExplosionAnimation/ExplosionAnimation.h
+ /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/ExplosionAnimation/Animation.h
  /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Player/Player.h
  /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Scene.h
 CMakeFiles/Space_Explorer_game.dir/Game/GameRender.cpp.o
@@ -25,7 +25,7 @@ CMakeFiles/Space_Explorer_game.dir/Game/GameRender.cpp.o
  /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameRender.h
  /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Bullet/Bullet.h
  /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Enemy/Enemy.h
- /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/ExplosionAnimation/ExplosionAnimation.h
+ /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/ExplosionAnimation/Animation.h
  /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Player/Player.h
  /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Scene.h
 CMakeFiles/Space_Explorer_game.dir/Game/Scene/Bullet/Bullet.cpp.o
@@ -34,16 +34,16 @@ CMakeFiles/Space_Explorer_game.dir/Game/Scene/Bullet/Bullet.cpp.o
 CMakeFiles/Space_Explorer_game.dir/Game/Scene/Enemy/Enemy.cpp.o
  /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Enemy/Enemy.cpp
  /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Enemy/Enemy.h
-CMakeFiles/Space_Explorer_game.dir/Game/Scene/ExplosionAnimation/ExplosionAnimation.cpp.o
- /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/ExplosionAnimation/ExplosionAnimation.cpp
- /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/ExplosionAnimation/ExplosionAnimation.h
+CMakeFiles/Space_Explorer_game.dir/Game/Scene/ExplosionAnimation/Animation.cpp.o
+ /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/ExplosionAnimation/Animation.cpp
+ /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/ExplosionAnimation/Animation.h
 CMakeFiles/Space_Explorer_game.dir/Game/Scene/Player/Player.cpp.o
  /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Player/Player.cpp
  /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Player/Player.h
 CMakeFiles/Space_Explorer_game.dir/Game/Scene/Scene.cpp.o
  /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Bullet/Bullet.h
  /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Enemy/Enemy.h
- /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/ExplosionAnimation/ExplosionAnimation.h
+ /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/ExplosionAnimation/Animation.h
  /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Player/Player.h
  /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Scene.cpp
  /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Scene.h
@@ -53,7 +53,7 @@ CMakeFiles/Space_Explorer_game.dir/main.cpp.o
  /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/GameRender.h
  /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Bullet/Bullet.h
  /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Enemy/Enemy.h
- /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/ExplosionAnimation/ExplosionAnimation.h
+ /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/ExplosionAnimation/Animation.h
  /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Player/Player.h
  /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Scene.h
  /Users/simonchubenko/Documents/C++/Space_Explorer_game/main.cpp

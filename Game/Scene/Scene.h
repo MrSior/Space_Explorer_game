@@ -8,7 +8,7 @@
 #include "Player/Player.h"
 #include "Bullet/Bullet.h"
 #include "Enemy/Enemy.h"
-#include "ExplosionAnimation/ExplosionAnimation.h"
+#include "ExplosionAnimation/Animation.h"
 #include "vector"
 
 class Scene {
@@ -17,11 +17,13 @@ public:
     std::vector<Bullet*> bullets;
     std::vector<Bullet*> enemy_bullets;
     std::vector<Enemy*> enemies;
-    std::vector<ExplosionAnimation*> explosion_animations;
+    std::vector<Animation*> explosion_animations;
+    std::vector<sf::Texture> explosion_frames;
     std::mt19937 gen;
     bool is_player_dead;
     sf::Clock spawn_timer;
     float spawn_time;
+    int max_enemy_hp;
     int score;
 
     Scene();

@@ -180,18 +180,18 @@ CMakeFiles/Space_Explorer_game.dir/Game/Scene/Enemy/Enemy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Explorer_game.dir/Game/Scene/Enemy/Enemy.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/Enemy/Enemy.cpp -o CMakeFiles/Space_Explorer_game.dir/Game/Scene/Enemy/Enemy.cpp.s
 
-CMakeFiles/Space_Explorer_game.dir/Game/Scene/ExplosionAnimation/ExplosionAnimation.cpp.o: CMakeFiles/Space_Explorer_game.dir/flags.make
-CMakeFiles/Space_Explorer_game.dir/Game/Scene/ExplosionAnimation/ExplosionAnimation.cpp.o: ../Game/Scene/ExplosionAnimation/ExplosionAnimation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/simonchubenko/Documents/C++/Space_Explorer_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Space_Explorer_game.dir/Game/Scene/ExplosionAnimation/ExplosionAnimation.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Explorer_game.dir/Game/Scene/ExplosionAnimation/ExplosionAnimation.cpp.o -c /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/ExplosionAnimation/ExplosionAnimation.cpp
+CMakeFiles/Space_Explorer_game.dir/Game/Scene/ExplosionAnimation/Animation.cpp.o: CMakeFiles/Space_Explorer_game.dir/flags.make
+CMakeFiles/Space_Explorer_game.dir/Game/Scene/ExplosionAnimation/Animation.cpp.o: ../Game/Scene/ExplosionAnimation/Animation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/simonchubenko/Documents/C++/Space_Explorer_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Space_Explorer_game.dir/Game/Scene/ExplosionAnimation/Animation.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Space_Explorer_game.dir/Game/Scene/ExplosionAnimation/Animation.cpp.o -c /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/ExplosionAnimation/Animation.cpp
 
-CMakeFiles/Space_Explorer_game.dir/Game/Scene/ExplosionAnimation/ExplosionAnimation.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Explorer_game.dir/Game/Scene/ExplosionAnimation/ExplosionAnimation.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/ExplosionAnimation/ExplosionAnimation.cpp > CMakeFiles/Space_Explorer_game.dir/Game/Scene/ExplosionAnimation/ExplosionAnimation.cpp.i
+CMakeFiles/Space_Explorer_game.dir/Game/Scene/ExplosionAnimation/Animation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Space_Explorer_game.dir/Game/Scene/ExplosionAnimation/Animation.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/ExplosionAnimation/Animation.cpp > CMakeFiles/Space_Explorer_game.dir/Game/Scene/ExplosionAnimation/Animation.cpp.i
 
-CMakeFiles/Space_Explorer_game.dir/Game/Scene/ExplosionAnimation/ExplosionAnimation.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Explorer_game.dir/Game/Scene/ExplosionAnimation/ExplosionAnimation.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/ExplosionAnimation/ExplosionAnimation.cpp -o CMakeFiles/Space_Explorer_game.dir/Game/Scene/ExplosionAnimation/ExplosionAnimation.cpp.s
+CMakeFiles/Space_Explorer_game.dir/Game/Scene/ExplosionAnimation/Animation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Space_Explorer_game.dir/Game/Scene/ExplosionAnimation/Animation.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/simonchubenko/Documents/C++/Space_Explorer_game/Game/Scene/ExplosionAnimation/Animation.cpp -o CMakeFiles/Space_Explorer_game.dir/Game/Scene/ExplosionAnimation/Animation.cpp.s
 
 # Object files for target Space_Explorer_game
 Space_Explorer_game_OBJECTS = \
@@ -203,7 +203,7 @@ Space_Explorer_game_OBJECTS = \
 "CMakeFiles/Space_Explorer_game.dir/Game/Scene/Player/Player.cpp.o" \
 "CMakeFiles/Space_Explorer_game.dir/Game/Scene/Bullet/Bullet.cpp.o" \
 "CMakeFiles/Space_Explorer_game.dir/Game/Scene/Enemy/Enemy.cpp.o" \
-"CMakeFiles/Space_Explorer_game.dir/Game/Scene/ExplosionAnimation/ExplosionAnimation.cpp.o"
+"CMakeFiles/Space_Explorer_game.dir/Game/Scene/ExplosionAnimation/Animation.cpp.o"
 
 # External object files for target Space_Explorer_game
 Space_Explorer_game_EXTERNAL_OBJECTS =
@@ -216,7 +216,7 @@ Space_Explorer_game: CMakeFiles/Space_Explorer_game.dir/Game/Scene/Scene.cpp.o
 Space_Explorer_game: CMakeFiles/Space_Explorer_game.dir/Game/Scene/Player/Player.cpp.o
 Space_Explorer_game: CMakeFiles/Space_Explorer_game.dir/Game/Scene/Bullet/Bullet.cpp.o
 Space_Explorer_game: CMakeFiles/Space_Explorer_game.dir/Game/Scene/Enemy/Enemy.cpp.o
-Space_Explorer_game: CMakeFiles/Space_Explorer_game.dir/Game/Scene/ExplosionAnimation/ExplosionAnimation.cpp.o
+Space_Explorer_game: CMakeFiles/Space_Explorer_game.dir/Game/Scene/ExplosionAnimation/Animation.cpp.o
 Space_Explorer_game: CMakeFiles/Space_Explorer_game.dir/build.make
 Space_Explorer_game: /Library/Frameworks/./sfml-graphics.framework/Versions/2.5.1/sfml-graphics
 Space_Explorer_game: /Library/Frameworks/./sfml-audio.framework/Versions/2.5.1/sfml-audio

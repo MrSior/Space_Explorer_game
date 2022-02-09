@@ -8,12 +8,13 @@
 #include "ctime"
 #include "iostream"
 
-Enemy::Enemy(sf::Vector2f spawn_position, int _attack_distance, int _circle_move_direction, float _circle_move_speed) {
+Enemy::Enemy(sf::Vector2f spawn_position, int _attack_distance, int _circle_move_direction, float _circle_move_speed, int _hp) {
     position = spawn_position;
     sprite.setPosition(spawn_position);
     attack_distance = _attack_distance;
     circle_move_speed = _circle_move_speed;
     circle_move_direction = _circle_move_direction;
+    hp = _hp;
     Init();
 }
 
@@ -108,4 +109,12 @@ bool Enemy::Can_enemy_shoot() {
         return true;
     }
     return false;
+}
+
+void Enemy::Get_damage(int i) {
+    hp -= i;
+}
+
+int Enemy::Get_hp() {
+    return hp;
 }

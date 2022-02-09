@@ -22,8 +22,9 @@ private:
     float shoot_time;
     int circle_move_direction;
     float circle_move_speed;
+    int hp;
 public:
-    Enemy(sf::Vector2f spawn_position, int _attack_distance, int _circle_move_direction, float _circle_move_speed);
+    Enemy(sf::Vector2f spawn_position, int _attack_distance, int _circle_move_direction, float _circle_move_speed, int _hp);
     void Init();
     void Move(sf::Vector2<float> movement);
     sf::Vector2<float> Get_position();
@@ -33,6 +34,8 @@ public:
     float Get_angle();
     bool Is_in_attack_distance(sf::Vector2f player_pos);
     bool Can_enemy_shoot();
+    void Get_damage(int i);
+    int Get_hp();
 
     void Update(sf::Vector2f player_pos);
 };

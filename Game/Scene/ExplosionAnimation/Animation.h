@@ -2,12 +2,12 @@
 // Created by Семён Чубенко on 08.02.2022.
 //
 
-#ifndef SPACE_EXPLORER_GAME_EXPLOSIONANIMATION_H
-#define SPACE_EXPLORER_GAME_EXPLOSIONANIMATION_H
+#ifndef SPACE_EXPLORER_GAME_ANIMATION_H
+#define SPACE_EXPLORER_GAME_ANIMATION_H
 
 #include "SFML/Graphics.hpp"
 
-class ExplosionAnimation {
+class Animation {
 private:
     std::vector<sf::Texture> frames;
     float frame_change_time;
@@ -16,8 +16,10 @@ private:
     sf::Clock clock;
     int current_frame;
     sf::Sprite frame;
+    bool is_looped;
 public:
-    ExplosionAnimation(sf::Vector2f position);
+    Animation(sf::Vector2f position);
+    Animation(sf::Vector2f position, std::vector<sf::Texture> frames, bool is_looped);
 
     void Init();
     void Update();
@@ -26,4 +28,4 @@ public:
 };
 
 
-#endif //SPACE_EXPLORER_GAME_EXPLOSIONANIMATION_H
+#endif //SPACE_EXPLORER_GAME_ANIMATION_H

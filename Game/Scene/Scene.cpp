@@ -13,9 +13,15 @@ Scene::Scene() {
 void Scene::Init() {
     gen.seed(time(0));
     is_player_dead = false;
+    max_enemy_hp = 1;
     score = 0;
     spawn_time = 15;
     spawn_timer.restart();
+    sf::Texture texture;
+    for (int i = 0; i < 12; ++i) {
+        texture.loadFromFile("./Images/Explosion/" + std::to_string(i + 1) + ".png");
+        explosion_frames.push_back(texture);
+    }
 }
 
 void Scene::Move_Player(sf::Vector2<float> direction) {
@@ -75,12 +81,15 @@ void Scene::Update() {
             auto between = bullet_pos - enemy_pos;
             float length = std::sqrt(between.x * between.x + between.y * between.y);
             if (length < 35){
-                Create_explosion_animation(enemies[j]->Get_position());
-                delete enemies[j];
+                enemies[j]->Get_damage(1);
                 delete bullets[i];
                 bullets.erase(bullets.begin() + i);
-                enemies.erase(enemies.begin() + j);
-                score++;
+                if (enemies[j]->Get_hp() <= 0) {
+                    Create_explosion_animation(enemies[j]->Get_position());
+                    delete enemies[j];
+                    enemies.erase(enemies.begin() + j);
+                    score++;
+                }
             }
         }
     }
@@ -89,15 +98,19 @@ void Scene::Update() {
         auto bullet_pos = enemy_bullets[i]->Get_position();
         auto between = bullet_pos - player.Get_position();
         float length = std::sqrt(between.x * between.x + between.y * between.y);
-        if (length < 25){
+        if (length < 35){
             player.Get_damage(1);
             delete enemy_bullets[i];
             enemy_bullets.erase(enemy_bullets.begin() + i);
         }
     }
-    if (player.Get_hp() < 0){
+    if (player.Get_hp() <= 0){
         is_player_dead = true;
         Create_explosion_animation(player.Get_position());
+    }
+
+    if (score >= 10){
+        max_enemy_hp = 2;
     }
 }
 
@@ -113,7 +126,7 @@ void Scene::Create_Enemy(sf::Vector2f spawn_position) {
     std::uniform_int_distribution<> dis1(-1, 1);
     std::uniform_real_distribution<> dis2(1, 2);
     Enemy* enemy = new Enemy(spawn_position, 100 * dis(gen),
-                             dis1(gen), dis2(gen));
+                             dis1(gen), dis2(gen), max_enemy_hp);
     enemies.push_back(enemy);
 }
 
@@ -123,6 +136,6 @@ void Scene::Create_enemy_bullet(Enemy *enemy) {
 }
 
 void Scene::Create_explosion_animation(sf::Vector2f position) {
-    ExplosionAnimation* explosionAnimation = new ExplosionAnimation(position);
+    Animation* explosionAnimation = new Animation(position, explosion_frames, false);
     explosion_animations.push_back(explosionAnimation);
 }

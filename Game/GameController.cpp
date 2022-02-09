@@ -24,14 +24,20 @@ void GameController::Run() {
                 }
             }
             if (event.type == sf::Event::KeyPressed){
-                if (event.key.code == sf::Keyboard::R) {
-                    delete m_model->scene;
-                    m_model->scene = new Scene();
+                if (event.key.code == sf::Keyboard::Space) {
+                    if (m_model->is_game_end) {
+                        delete m_model->scene;
+                        m_model->scene = new Scene();
+                        m_model->is_game_end = false;
+                        m_model->is_menu_open = false;
+                    } else {
+                        m_model->is_menu_open = false;
+                    }
                 }
             }
             if (event.type == sf::Event::KeyPressed){
                 if (event.key.code == sf::Keyboard::Escape) {
-                    m_model->is_menu_open = !m_model->is_menu_open;
+                    m_model->is_menu_open = true;
                 }
             }
         }
@@ -42,6 +48,12 @@ void GameController::Run() {
 
         if (m_model->scene->is_player_dead && m_model->scene->explosion_animations.empty()) {
             m_model->is_menu_open = true;
+            m_model->is_game_end = true;
+        }
+        if (!m_model->is_menu_open) {
+            for (auto & explosion_animation : m_model->scene->explosion_animations) {
+                explosion_animation->Update();
+            }
         }
         m_render -> Render();
     }
